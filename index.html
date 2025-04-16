@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -18,30 +17,50 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
+      background: linear-gradient(to bottom, #000 0%, #111 100%);
     }
     .container {
-      max-width: 600px;
-      padding: 1rem;
+      max-width: 700px;
+      padding: 2rem;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
     }
     .language-select {
       position: absolute;
       top: 20px;
       right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .language-select button {
-      margin-left: 10px;
-      background: none;
+      background: rgba(255, 255, 255, 0.1);
       color: #fff;
-      border: 1px solid #fff;
-      padding: 5px 10px;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
       cursor: pointer;
+      transition: background 0.3s;
+    }
+    .language-select button:hover {
+      background: rgba(255, 255, 255, 0.3);
     }
   </style>
 </head>
 <body>
   <div class="language-select">
-    <button onclick="location.href='index-it.html'">ITA</button>
-    <button onclick="location.href='index-en.html'">ENG</button>
+    <button onclick="location.href='index-it.html'">Italiano</button>
+    <button onclick="location.href='index-en.html'">English</button>
+    <button onclick="location.href='index-fr.html'">Français</button>
+    <button onclick="location.href='index-es.html'">Español</button>
+    <button onclick="location.href='index-de.html'">Deutsch</button>
+    <button onclick="location.href='index-pt.html'">Português</button>
+    <button onclick="location.href='index-zh.html'">中文</button>
+    <button onclick="location.href='index-ja.html'">日本語</button>
+    <button onclick="location.href='index-ru.html'">Русский</button>
+    <button onclick="location.href='index-ar.html'">العربية</button>
   </div>
   <div class="container">
     <h1>Benvenuto. O forse: bentornato.</h1>
